@@ -81,6 +81,10 @@ InstallNET23                  # UninstallNET23
 ### Customs ###
 ShowSecondsInTaskbar			# HideSecondsInTaskbar
 ShowBuildNumberOnDesktop		# HideBuildNumberOnDesktop
+DownloadFirefox
+# InstallFirefox
+DownloadCCleaner
+# InstallCCleaner
 
 ### Auxiliary Functions ###
 WaitForKey
