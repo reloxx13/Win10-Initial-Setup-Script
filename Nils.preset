@@ -1,0 +1,88 @@
+##########
+# Win 10 / Server 2016 / Server 2019 Initial Setup Script - Default preset
+# Author: Disassembler <disassembler@dasm.cz>
+# Version: v3.7, 2019-05-31
+# Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
+##########
+
+### Require administrator privileges ###
+RequireAdmin
+
+### Privacy Tweaks ###
+DisableSmartScreen            # EnableSmartScreen
+!DisableLocation                 # EnableLocation
+!DisableMapUpdates               # EnableMapUpdates
+DisableBiometrics             # EnableBiometrics
+SetP2PUpdateDisable
+EnableClearRecentFiles        # DisableClearRecentFiles
+DisableRecentFiles            # EnableRecentFiles
+
+### Security Tweaks ###
+SetUACLow                     # SetUACHigh
+HideDefenderTrayIcon          # ShowDefenderTrayIcon
+DisableDefenderCloud          # EnableDefenderCloud
+EnableDefenderAppGuard        # DisableDefenderAppGuard
+DisableDownloadBlocking       # EnableDownloadBlocking
+!EnableF8BootMenu                # DisableF8BootMenu
+
+### Service Tweaks ###
+EnableUpdateDriver
+EnableUpdateAutoDownload
+DisableClipboardHistory
+!EnableRemoteDesktop             # DisableRemoteDesktop
+DisableSuperfetch             # EnableSuperfetch
+EnableNTFSLongPaths             # DisableNTFSLongPaths
+EnableFastStartup
+DisableAutoRebootOnCrash      # EnableAutoRebootOnCrash
+
+### UI Tweaks ###
+!DisableActionCenter             # EnableActionCenter
+!DisableLockScreen               # EnableLockScreen
+!HideNetworkFromLockScreen       # ShowNetworkOnLockScreen
+!HideShutdownFromLockScreen      # ShowShutdownOnLockScreen
+HideRecentlyAddedApps         # ShowRecentlyAddedApps
+HideMostUsedApps              # ShowMostUsedApps
+SetControlPanelSmallIcons     # SetControlPanelLargeIcons     # SetControlPanelCategories
+!SetVisualFXPerformance         
+SetVisualFXAppearance
+EnableDarkTheme               # DisableDarkTheme
+EnableNumlock                 # DisableNumlock
+
+### Explorer UI Tweaks ###
+ShowExplorerTitleFullPath     # HideExplorerTitleFullPath
+ShowSuperHiddenFiles          # HideSuperHiddenFiles
+ShowEmptyDrives               # HideEmptyDrives
+DisableSharingWizard          # EnableSharingWizard
+HideSyncNotifications           # ShowSyncNotifications
+HideRecentShortcuts             # ShowRecentShortcuts
+SetExplorerThisPC               # SetExplorerQuickAccess
+!HideQuickAccess                 # 
+ShowQuickAccess
+ShowUserFolderOnDesktop       # HideUserFolderFromDesktop
+HideDesktopFromExplorer       # ShowDesktopInExplorer
+Hide3DObjectsFromExplorer     # Show3DObjectsInExplorer
+HideIncludeInLibraryMenu      # ShowIncludeInLibraryMenu
+HideShareMenu                 # ShowShareMenu
+DisableThumbnailCache           # EnableThumbnailCache
+DisableThumbsDBOnNetwork        # EnableThumbsDBOnNetwork
+!EnableNavPaneExpand             
+DisableNavPaneExpand
+
+### Application Tweaks ###
+!DisableXboxFeatures             # EnableXboxFeatures
+EnableFullscreenOptims
+!DisableAdobeFlash               # EnableAdobeFlash
+InstallNET23                  # UninstallNET23
+
+### Unpinning ###
+# UnpinStartMenuTiles
+# UnpinTaskbarIcons
+
+
+### Customs ###
+ShowSecondsInTaskbar			# HideSecondsInTaskbar
+
+
+### Auxiliary Functions ###
+WaitForKey
+Restart
