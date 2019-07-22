@@ -78,7 +78,6 @@ InstallNET23                  # UninstallNET23
 # UnpinStartMenuTiles
 # UnpinTaskbarIcons
 
-
 ### Customs ###
 ShowSecondsInTaskbar			# HideSecondsInTaskbar
 ShowBuildNumberOnDesktop		# HideBuildNumberOnDesktop
