@@ -81,7 +81,7 @@ InstallNET23                  # UninstallNET23
 
 ### Customs ###
 ShowSecondsInTaskbar			# HideSecondsInTaskbar
-
+ShowBuildNumberOnDesktop		# HideBuildNumberOnDesktop
 
 ### Auxiliary Functions ###
 WaitForKey
