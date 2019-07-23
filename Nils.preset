@@ -4,7 +4,12 @@
 # Version: v3.7, 2019-05-31
 # Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
 ##########
-
+# Sources
+# https://github.com/SternerStock/Win10-Initial-Setup-Script
+# https://github.com/cooperaerial/Win10-Initial-Setup-Script
+# https://github.com/khlam/Win10-Config
+#
+#
 ### Require administrator privileges ###
 RequireAdmin
 
@@ -81,11 +86,39 @@ InstallNET23                  # UninstallNET23
 ### Customs ###
 ShowSecondsInTaskbar			# HideSecondsInTaskbar
 ShowBuildNumberOnDesktop		# HideBuildNumberOnDesktop
+
+SetConsoleColor					# ResetDefaultConsoleColor
+# AddPowerShellHereShortcut		# RemovePowerShellHereShortcut
+
+DisableServices
+DisableNagle
+DisableTeleIps
+ChangeVolumeClassic
+# DisableTransparency
+
+GamingRegSet
+Disablewpad
+AppendHosts
+NetworkTweaks
+SetDefaultViewDetailed
+
+
+!UninstallThirdPartyBloat
+UninstallThirdPartyBloatCustom
+!UninstallMsftBloat
+UninstallMsftBloatCustom
+
+UpdateNvidiaDrivers
+
 DownloadFirefox
 # InstallFirefox
 DownloadCCleaner
 # InstallCCleaner
 
+
+
+
+
 ### Auxiliary Functions ###
 WaitForKey
-Restart
+# Restart
