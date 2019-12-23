@@ -13,7 +13,7 @@ DisableSmartScreen            # EnableSmartScreen
 !DisableLocation                 # EnableLocation
 !DisableMapUpdates               # EnableMapUpdates
 DisableBiometrics             # EnableBiometrics
-SetP2PUpdateDisable
+SetP2PUpdateLocal
 EnableClearRecentFiles        # DisableClearRecentFiles
 DisableRecentFiles            # EnableRecentFiles
 
@@ -29,7 +29,7 @@ DisableDownloadBlocking       # EnableDownloadBlocking
 EnableUpdateDriver
 EnableUpdateAutoDownload
 DisableClipboardHistory
-!EnableRemoteDesktop             # DisableRemoteDesktop
+EnableRemoteDesktop             # DisableRemoteDesktop
 DisableSuperfetch             # EnableSuperfetch
 EnableNTFSLongPaths             # DisableNTFSLongPaths
 EnableFastStartup
